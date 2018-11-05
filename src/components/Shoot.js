@@ -3,7 +3,10 @@ import React, { Component } from 'react';
 class Shoot extends Component {
   render() {
     return (
-      <h3> This is the Shoot component </h3>
+      <React.Fragment>
+        <h3> This is the Shoot component </h3>
+        <button className="new-take-btn">+</button>
+      </React.Fragment>
     )
   }
 }
