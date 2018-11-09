@@ -7,6 +7,12 @@ describe("Shoot", () => {
 
   const shoot = shallow(<Shoot />);
 
+  afterEach( () => {
+    shoot.setState({
+      takes: []
+    })
+  })
+
   it("renders correctly", () => {
     expect(shoot).toMatchSnapshot();
   })
@@ -34,6 +40,14 @@ describe("Shoot", () => {
       expect(shoot.state().takes[2].props.id).toEqual(3);
     });
     
+    it("adds a new Take row to the 'takes' div", () => {
+      shoot.find(".new-take-btn").simulate("click");
+      const displayedTakes = shoot.find(".takes");
+
+      expect(displayedTakes.children().length).toEqual(1);
+
+    });
+
   });
   
 });
