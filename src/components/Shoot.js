@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Take from './Take';
+import Button from '@material-ui/core/Button'
 
 class Shoot extends Component {
   constructor() {
@@ -24,7 +25,9 @@ class Shoot extends Component {
     return (
       <React.Fragment>
         <h3> This is the Shoot component </h3>
-        <button className="new-take-btn" onClick={this.addTake}>+</button>
+        <Button variant="contained" color="primary" className="new-take-btn" onClick={this.addTake}>
+          Add New Take
+        </Button>
       </React.Fragment>
     )
   }
