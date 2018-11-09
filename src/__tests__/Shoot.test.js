@@ -10,6 +10,10 @@ describe("Shoot", () => {
     expect(shoot).toMatchSnapshot();
   })
 
+  it("initializes the `state` with an empty list of takes", () => {
+    expect(shoot.state().takes).toEqual([]);
+  })
+
   it("has button to create new take", () => {
     const button = <button className="new-take-btn">+</button>
     expect(shoot.contains(button)).toEqual(true);

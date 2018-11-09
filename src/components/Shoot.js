@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 
 class Shoot extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      takes: []
+    }
+  }
+
+
   render() {
     return (
       <React.Fragment>
