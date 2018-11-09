@@ -3,9 +3,15 @@ import { shallow } from 'enzyme';
 import Shoot from '../components/Shoot';
 
 describe("Shoot", () => {
+
+  const shoot = shallow(<Shoot />);
+
+  it("renders correctly", () => {
+    expect(shoot).toMatchSnapshot();
+  })
+
   it("has button to create new take", () => {
-    const wrapper = shallow(<Shoot />);
     const button = <button className="new-take-btn">+</button>
-    expect(wrapper.contains(button)).toEqual(true);
+    expect(shoot.contains(button)).toEqual(true);
   });
 });
