@@ -23,6 +23,7 @@ ShallowWrapper {
         </h3>,
         <button
           className="new-take-btn"
+          onClick={[Function]}
         >
           +
         </button>,
@@ -48,6 +49,7 @@ ShallowWrapper {
         "props": Object {
           "children": "+",
           "className": "new-take-btn",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": "+",
@@ -68,6 +70,7 @@ ShallowWrapper {
           </h3>,
           <button
             className="new-take-btn"
+            onClick={[Function]}
           >
             +
           </button>,
@@ -93,6 +96,7 @@ ShallowWrapper {
           "props": Object {
             "children": "+",
             "className": "new-take-btn",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "+",

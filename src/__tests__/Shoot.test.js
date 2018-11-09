@@ -14,8 +14,9 @@ describe("Shoot", () => {
     expect(shoot.state().takes).toEqual([]);
   })
 
-  it("has button to create new take", () => {
-    const button = <button className="new-take-btn">+</button>
-    expect(shoot.contains(button)).toEqual(true);
+  it("adds a new take to `state` when add button is clicked", () => {
+    shoot.find(".new-take-btn").simulate("click");
+
+    expect(shoot.state().takes).toEqual([{ id: 1 }]);
   });
 });
