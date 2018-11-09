@@ -29,6 +29,9 @@ ShallowWrapper {
         >
           Add New Take
         </WithStyles(Button)>,
+        <div
+          className="takes"
+        />,
       ],
     },
     "ref": null,
@@ -59,6 +62,18 @@ ShallowWrapper {
         "rendered": "Add New Take",
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [],
+          "className": "takes",
+        },
+        "ref": null,
+        "rendered": Array [],
+        "type": "div",
+      },
     ],
     "type": Symbol(react.fragment),
   },
@@ -80,6 +95,9 @@ ShallowWrapper {
           >
             Add New Take
           </WithStyles(Button)>,
+          <div
+            className="takes"
+          />,
         ],
       },
       "ref": null,
@@ -109,6 +127,18 @@ ShallowWrapper {
           "ref": null,
           "rendered": "Add New Take",
           "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [],
+            "className": "takes",
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": "div",
         },
       ],
       "type": Symbol(react.fragment),

@@ -16,9 +16,15 @@ class Shoot extends Component {
     const ids = this.state.takes.map(take => take.props.id);
     const max_id = ids.length === 0 ? 0 : Math.max(...ids);
     
-    takes.push(<Take id={max_id + 1} />);
+    takes.push(<Take key={max_id} id={max_id + 1} />);
 
     this.setState({ takes })
+  }
+
+  displayTakes = () => {
+    
+    return this.state.takes
+  
   }
 
   render() {
@@ -28,6 +34,11 @@ class Shoot extends Component {
         <Button variant="contained" color="primary" className="new-take-btn" onClick={this.addTake}>
           Add New Take
         </Button>
+
+        <div className="takes">
+          {this.displayTakes()}
+        </div>
+        
       </React.Fragment>
     )
   }

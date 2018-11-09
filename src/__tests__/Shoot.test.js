@@ -20,7 +20,8 @@ describe("Shoot", () => {
     it("adds a new take to `state` when add button is clicked", () => {
       shoot.find(".new-take-btn").simulate("click");
 
-      expect(shoot.state().takes).toEqual([<Take id={1}/>])
+      expect(shoot.state().takes.length).toEqual(1)
+
     });
 
     it("assigns a unique id to each take", () => {
@@ -32,6 +33,7 @@ describe("Shoot", () => {
       expect(shoot.state().takes[1].props.id).toEqual(2);
       expect(shoot.state().takes[2].props.id).toEqual(3);
     });
+    
   });
   
 });
