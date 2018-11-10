@@ -24,22 +24,26 @@ class Take extends Component {
             className="scene-input" 
             variant="outlined" 
             label="Scene"
-            autoFocus 
+            autoFocus
+            onChange={event => this.setState({ scene: event.target.value })} 
           />
           <TextField 
             className="shot-input"
             variant="outlined"
             label="Shot"
+            onChange={event => this.setState({ shot: event.target.value })} 
           />
           <TextField 
             className="take-input"
             variant="outlined" 
             label="Take"
+            onChange={event => this.setState({ takeNumber: event.target.value })} 
           />
           <TextField 
             className="desc-input"
             variant="outlined" 
             label="Description"
+            onChange={event => this.setState({ description: event.target.value })} 
           />
           <TextField 
             className="goodTake-input"
@@ -47,10 +51,11 @@ class Take extends Component {
             label="Good Take?"
           />
           <TextField
-            className="notes"
+            className="notes-input"
             variant="outlined"
             label="Notes"
             multiline
+            onChange={event => this.setState({ notes: event.target.value })}
           />
         </form>
       </div>

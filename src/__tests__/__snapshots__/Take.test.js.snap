@@ -26,6 +26,7 @@ ShallowWrapper {
             autoFocus={true}
             className="scene-input"
             label="Scene"
+            onChange={[Function]}
             required={false}
             select={false}
             variant="outlined"
@@ -33,6 +34,7 @@ ShallowWrapper {
           <TextField
             className="shot-input"
             label="Shot"
+            onChange={[Function]}
             required={false}
             select={false}
             variant="outlined"
@@ -40,6 +42,7 @@ ShallowWrapper {
           <TextField
             className="take-input"
             label="Take"
+            onChange={[Function]}
             required={false}
             select={false}
             variant="outlined"
@@ -47,6 +50,7 @@ ShallowWrapper {
           <TextField
             className="desc-input"
             label="Description"
+            onChange={[Function]}
             required={false}
             select={false}
             variant="outlined"
@@ -54,6 +58,15 @@ ShallowWrapper {
           <TextField
             className="goodTake-input"
             label="Good Take?"
+            required={false}
+            select={false}
+            variant="outlined"
+          />
+          <TextField
+            className="notes-input"
+            label="Notes"
+            multiline={true}
+            onChange={[Function]}
             required={false}
             select={false}
             variant="outlined"
@@ -91,6 +104,7 @@ ShallowWrapper {
               autoFocus={true}
               className="scene-input"
               label="Scene"
+              onChange={[Function]}
               required={false}
               select={false}
               variant="outlined"
@@ -98,6 +112,7 @@ ShallowWrapper {
             <TextField
               className="shot-input"
               label="Shot"
+              onChange={[Function]}
               required={false}
               select={false}
               variant="outlined"
@@ -105,6 +120,7 @@ ShallowWrapper {
             <TextField
               className="take-input"
               label="Take"
+              onChange={[Function]}
               required={false}
               select={false}
               variant="outlined"
@@ -112,6 +128,7 @@ ShallowWrapper {
             <TextField
               className="desc-input"
               label="Description"
+              onChange={[Function]}
               required={false}
               select={false}
               variant="outlined"
@@ -119,6 +136,15 @@ ShallowWrapper {
             <TextField
               className="goodTake-input"
               label="Good Take?"
+              required={false}
+              select={false}
+              variant="outlined"
+            />,
+            <TextField
+              className="notes-input"
+              label="Notes"
+              multiline={true}
+              onChange={[Function]}
               required={false}
               select={false}
               variant="outlined"
@@ -135,6 +161,7 @@ ShallowWrapper {
               "autoFocus": true,
               "className": "scene-input",
               "label": "Scene",
+              "onChange": [Function],
               "required": false,
               "select": false,
               "variant": "outlined",
@@ -150,6 +177,7 @@ ShallowWrapper {
             "props": Object {
               "className": "shot-input",
               "label": "Shot",
+              "onChange": [Function],
               "required": false,
               "select": false,
               "variant": "outlined",
@@ -165,6 +193,7 @@ ShallowWrapper {
             "props": Object {
               "className": "take-input",
               "label": "Take",
+              "onChange": [Function],
               "required": false,
               "select": false,
               "variant": "outlined",
@@ -180,6 +209,7 @@ ShallowWrapper {
             "props": Object {
               "className": "desc-input",
               "label": "Description",
+              "onChange": [Function],
               "required": false,
               "select": false,
               "variant": "outlined",
@@ -195,6 +225,23 @@ ShallowWrapper {
             "props": Object {
               "className": "goodTake-input",
               "label": "Good Take?",
+              "required": false,
+              "select": false,
+              "variant": "outlined",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "className": "notes-input",
+              "label": "Notes",
+              "multiline": true,
+              "onChange": [Function],
               "required": false,
               "select": false,
               "variant": "outlined",
@@ -224,6 +271,7 @@ ShallowWrapper {
               autoFocus={true}
               className="scene-input"
               label="Scene"
+              onChange={[Function]}
               required={false}
               select={false}
               variant="outlined"
@@ -231,6 +279,7 @@ ShallowWrapper {
             <TextField
               className="shot-input"
               label="Shot"
+              onChange={[Function]}
               required={false}
               select={false}
               variant="outlined"
@@ -238,6 +287,7 @@ ShallowWrapper {
             <TextField
               className="take-input"
               label="Take"
+              onChange={[Function]}
               required={false}
               select={false}
               variant="outlined"
@@ -245,6 +295,7 @@ ShallowWrapper {
             <TextField
               className="desc-input"
               label="Description"
+              onChange={[Function]}
               required={false}
               select={false}
               variant="outlined"
@@ -252,6 +303,15 @@ ShallowWrapper {
             <TextField
               className="goodTake-input"
               label="Good Take?"
+              required={false}
+              select={false}
+              variant="outlined"
+            />
+            <TextField
+              className="notes-input"
+              label="Notes"
+              multiline={true}
+              onChange={[Function]}
               required={false}
               select={false}
               variant="outlined"
@@ -289,6 +349,7 @@ ShallowWrapper {
                 autoFocus={true}
                 className="scene-input"
                 label="Scene"
+                onChange={[Function]}
                 required={false}
                 select={false}
                 variant="outlined"
@@ -296,6 +357,7 @@ ShallowWrapper {
               <TextField
                 className="shot-input"
                 label="Shot"
+                onChange={[Function]}
                 required={false}
                 select={false}
                 variant="outlined"
@@ -303,6 +365,7 @@ ShallowWrapper {
               <TextField
                 className="take-input"
                 label="Take"
+                onChange={[Function]}
                 required={false}
                 select={false}
                 variant="outlined"
@@ -310,6 +373,7 @@ ShallowWrapper {
               <TextField
                 className="desc-input"
                 label="Description"
+                onChange={[Function]}
                 required={false}
                 select={false}
                 variant="outlined"
@@ -317,6 +381,15 @@ ShallowWrapper {
               <TextField
                 className="goodTake-input"
                 label="Good Take?"
+                required={false}
+                select={false}
+                variant="outlined"
+              />,
+              <TextField
+                className="notes-input"
+                label="Notes"
+                multiline={true}
+                onChange={[Function]}
                 required={false}
                 select={false}
                 variant="outlined"
@@ -333,6 +406,7 @@ ShallowWrapper {
                 "autoFocus": true,
                 "className": "scene-input",
                 "label": "Scene",
+                "onChange": [Function],
                 "required": false,
                 "select": false,
                 "variant": "outlined",
@@ -348,6 +422,7 @@ ShallowWrapper {
               "props": Object {
                 "className": "shot-input",
                 "label": "Shot",
+                "onChange": [Function],
                 "required": false,
                 "select": false,
                 "variant": "outlined",
@@ -363,6 +438,7 @@ ShallowWrapper {
               "props": Object {
                 "className": "take-input",
                 "label": "Take",
+                "onChange": [Function],
                 "required": false,
                 "select": false,
                 "variant": "outlined",
@@ -378,6 +454,7 @@ ShallowWrapper {
               "props": Object {
                 "className": "desc-input",
                 "label": "Description",
+                "onChange": [Function],
                 "required": false,
                 "select": false,
                 "variant": "outlined",
@@ -393,6 +470,23 @@ ShallowWrapper {
               "props": Object {
                 "className": "goodTake-input",
                 "label": "Good Take?",
+                "required": false,
+                "select": false,
+                "variant": "outlined",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "notes-input",
+                "label": "Notes",
+                "multiline": true,
+                "onChange": [Function],
                 "required": false,
                 "select": false,
                 "variant": "outlined",

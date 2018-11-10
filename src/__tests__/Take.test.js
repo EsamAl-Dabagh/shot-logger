@@ -18,6 +18,41 @@ describe("Take", () => {
       description: "",
       goodTake: false,
       notes: ""
-    })
+    });
+  });
+
+  describe("when typing into the Scene input", () => {
+    it("updates the scene in `state`", () => {
+      take.find(".scene-input").simulate("change", { target: { value: "1" } });
+      expect(take.state().scene).toEqual("1");
+    });
+  });
+
+  describe("when typing into the Shot input", () => {
+    it("updates the shot in `state`", () => {
+      take.find(".shot-input").simulate("change", { target: { value: "1" } });
+      expect(take.state().shot).toEqual("1");
+    });
+  });
+
+  describe("when typing into the Take input", () => {
+    it("updates the takeNumber in `state`", () => {
+      take.find(".take-input").simulate("change", { target: { value: "1" } });
+      expect(take.state().takeNumber).toEqual("1");
+    });
+  });
+
+  describe("when typing into the Description input", () => {
+    it("updates the description in `state`", () => {
+      take.find(".desc-input").simulate("change", { target: { value: "A description" } });
+      expect(take.state().description).toEqual("A description");
+    });
+  });
+
+  describe("when typing into the Notes input", () => {
+    it("updates the notes in `state`", () => {
+      take.find(".notes-input").simulate("change", { target: { value: "Some notes" } });
+      expect(take.state().notes).toEqual("Some notes");
+    });
   });
 });
