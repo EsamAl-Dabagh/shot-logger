@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { shallow } from 'enzyme';
 import Shoot from '../components/Shoot';
-import Take from '../components/Take';
 
 describe("Shoot", () => {
 

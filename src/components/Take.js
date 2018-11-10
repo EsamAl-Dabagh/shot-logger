@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TextField from '@material-ui/core/TextField';
 
 class Take extends Component {
   render() {
@@ -6,11 +7,32 @@ class Take extends Component {
       <div className="take">
         <p>This is the TAKE component: {this.props.id}</p>
         <form>
-          <input className="scene-input"></input>
-          <input className="shot-input"></input>
-          <input className="take-input"></input>
-          <input className="desc-input"></input>
-          <input className="goodTake-input"></input>
+          <TextField 
+            className="scene-input" 
+            variant="outlined" 
+            label="Scene"
+            autoFocus 
+          />
+          <TextField 
+            className="shot-input"
+            variant="outlined"
+            label="Shot"
+          />
+          <TextField 
+            className="take-input"
+            variant="outlined" 
+            label="Take"
+          />
+          <TextField 
+            className="desc-input"
+            variant="outlined" 
+            label="Description"
+          />
+          <TextField 
+            className="goodTake-input"
+            variant="outlined" 
+            label="Good Take?"
+          />
         </form>
       </div>
       
