@@ -22,20 +22,41 @@ ShallowWrapper {
           This is the TAKE component: 
         </p>,
         <form>
-          <input
+          <TextField
+            autoFocus={true}
             className="scene-input"
+            label="Scene"
+            required={false}
+            select={false}
+            variant="outlined"
           />
-          <input
+          <TextField
             className="shot-input"
+            label="Shot"
+            required={false}
+            select={false}
+            variant="outlined"
           />
-          <input
+          <TextField
             className="take-input"
+            label="Take"
+            required={false}
+            select={false}
+            variant="outlined"
           />
-          <input
+          <TextField
             className="desc-input"
+            label="Description"
+            required={false}
+            select={false}
+            variant="outlined"
           />
-          <input
+          <TextField
             className="goodTake-input"
+            label="Good Take?"
+            required={false}
+            select={false}
+            variant="outlined"
           />
         </form>,
       ],
@@ -66,20 +87,41 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <input
+            <TextField
+              autoFocus={true}
               className="scene-input"
+              label="Scene"
+              required={false}
+              select={false}
+              variant="outlined"
             />,
-            <input
+            <TextField
               className="shot-input"
+              label="Shot"
+              required={false}
+              select={false}
+              variant="outlined"
             />,
-            <input
+            <TextField
               className="take-input"
+              label="Take"
+              required={false}
+              select={false}
+              variant="outlined"
             />,
-            <input
+            <TextField
               className="desc-input"
+              label="Description"
+              required={false}
+              select={false}
+              variant="outlined"
             />,
-            <input
+            <TextField
               className="goodTake-input"
+              label="Good Take?"
+              required={false}
+              select={false}
+              variant="outlined"
             />,
           ],
         },
@@ -88,57 +130,78 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
+              "autoFocus": true,
               "className": "scene-input",
+              "label": "Scene",
+              "required": false,
+              "select": false,
+              "variant": "outlined",
             },
             "ref": null,
             "rendered": null,
-            "type": "input",
+            "type": [Function],
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "className": "shot-input",
+              "label": "Shot",
+              "required": false,
+              "select": false,
+              "variant": "outlined",
             },
             "ref": null,
             "rendered": null,
-            "type": "input",
+            "type": [Function],
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "className": "take-input",
+              "label": "Take",
+              "required": false,
+              "select": false,
+              "variant": "outlined",
             },
             "ref": null,
             "rendered": null,
-            "type": "input",
+            "type": [Function],
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "className": "desc-input",
+              "label": "Description",
+              "required": false,
+              "select": false,
+              "variant": "outlined",
             },
             "ref": null,
             "rendered": null,
-            "type": "input",
+            "type": [Function],
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "className": "goodTake-input",
+              "label": "Good Take?",
+              "required": false,
+              "select": false,
+              "variant": "outlined",
             },
             "ref": null,
             "rendered": null,
-            "type": "input",
+            "type": [Function],
           },
         ],
         "type": "form",
@@ -157,20 +220,41 @@ ShallowWrapper {
             This is the TAKE component: 
           </p>,
           <form>
-            <input
+            <TextField
+              autoFocus={true}
               className="scene-input"
+              label="Scene"
+              required={false}
+              select={false}
+              variant="outlined"
             />
-            <input
+            <TextField
               className="shot-input"
+              label="Shot"
+              required={false}
+              select={false}
+              variant="outlined"
             />
-            <input
+            <TextField
               className="take-input"
+              label="Take"
+              required={false}
+              select={false}
+              variant="outlined"
             />
-            <input
+            <TextField
               className="desc-input"
+              label="Description"
+              required={false}
+              select={false}
+              variant="outlined"
             />
-            <input
+            <TextField
               className="goodTake-input"
+              label="Good Take?"
+              required={false}
+              select={false}
+              variant="outlined"
             />
           </form>,
         ],
@@ -201,20 +285,41 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <input
+              <TextField
+                autoFocus={true}
                 className="scene-input"
+                label="Scene"
+                required={false}
+                select={false}
+                variant="outlined"
               />,
-              <input
+              <TextField
                 className="shot-input"
+                label="Shot"
+                required={false}
+                select={false}
+                variant="outlined"
               />,
-              <input
+              <TextField
                 className="take-input"
+                label="Take"
+                required={false}
+                select={false}
+                variant="outlined"
               />,
-              <input
+              <TextField
                 className="desc-input"
+                label="Description"
+                required={false}
+                select={false}
+                variant="outlined"
               />,
-              <input
+              <TextField
                 className="goodTake-input"
+                label="Good Take?"
+                required={false}
+                select={false}
+                variant="outlined"
               />,
             ],
           },
@@ -223,57 +328,78 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
+                "autoFocus": true,
                 "className": "scene-input",
+                "label": "Scene",
+                "required": false,
+                "select": false,
+                "variant": "outlined",
               },
               "ref": null,
               "rendered": null,
-              "type": "input",
+              "type": [Function],
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
                 "className": "shot-input",
+                "label": "Shot",
+                "required": false,
+                "select": false,
+                "variant": "outlined",
               },
               "ref": null,
               "rendered": null,
-              "type": "input",
+              "type": [Function],
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
                 "className": "take-input",
+                "label": "Take",
+                "required": false,
+                "select": false,
+                "variant": "outlined",
               },
               "ref": null,
               "rendered": null,
-              "type": "input",
+              "type": [Function],
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
                 "className": "desc-input",
+                "label": "Description",
+                "required": false,
+                "select": false,
+                "variant": "outlined",
               },
               "ref": null,
               "rendered": null,
-              "type": "input",
+              "type": [Function],
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
                 "className": "goodTake-input",
+                "label": "Good Take?",
+                "required": false,
+                "select": false,
+                "variant": "outlined",
               },
               "ref": null,
               "rendered": null,
-              "type": "input",
+              "type": [Function],
             },
           ],
           "type": "form",

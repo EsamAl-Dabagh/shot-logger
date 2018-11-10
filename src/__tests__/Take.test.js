@@ -9,4 +9,15 @@ describe("Take", () => {
   it("renders correctly", () => {
     expect(take).toMatchSnapshot();
   });
+
+  it("initializes with scene, shot, takeNumber, description, goodTake, and notes in `state`", () => {
+    expect(take.state()).toEqual({
+      scene: "",
+      shot: "",
+      takeNumber: "",
+      description: "",
+      goodTake: false,
+      notes: ""
+    })
+  });
 });

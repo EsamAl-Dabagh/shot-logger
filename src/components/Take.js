@@ -2,6 +2,19 @@ import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
 
 class Take extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      scene: "",
+      shot: "",
+      takeNumber: "",
+      description: "",
+      goodTake: false,
+      notes: ""
+    }
+  }
+
   render() {
     return (
       <div className="take">
@@ -32,6 +45,12 @@ class Take extends Component {
             className="goodTake-input"
             variant="outlined" 
             label="Good Take?"
+          />
+          <TextField
+            className="notes"
+            variant="outlined"
+            label="Notes"
+            multiline
           />
         </form>
       </div>
