@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
+import Switch from '@material-ui/core/Switch';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 class Take extends Component {
   constructor() {
@@ -45,11 +47,16 @@ class Take extends Component {
             label="Description"
             onChange={event => this.setState({ description: event.target.value })} 
           />
-          <TextField 
-            className="goodTake-input"
-            variant="outlined" 
+              
+          <Switch 
+            className="goodTake-switch"
+            checked={this.state.goodTake}
+            onChange={event => this.setState({ goodTake: event.target.checked })} 
+            value="goodTake"
+            color="primary"
             label="Good Take?"
           />
+          
           <TextField
             className="notes-input"
             variant="outlined"

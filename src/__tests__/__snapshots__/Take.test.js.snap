@@ -55,12 +55,13 @@ ShallowWrapper {
             select={false}
             variant="outlined"
           />
-          <TextField
-            className="goodTake-input"
+          <WithStyles(Switch)
+            checked={false}
+            className="goodTake-switch"
+            color="primary"
             label="Good Take?"
-            required={false}
-            select={false}
-            variant="outlined"
+            onChange={[Function]}
+            value="goodTake"
           />
           <TextField
             className="notes-input"
@@ -133,12 +134,13 @@ ShallowWrapper {
               select={false}
               variant="outlined"
             />,
-            <TextField
-              className="goodTake-input"
+            <WithStyles(Switch)
+              checked={false}
+              className="goodTake-switch"
+              color="primary"
               label="Good Take?"
-              required={false}
-              select={false}
-              variant="outlined"
+              onChange={[Function]}
+              value="goodTake"
             />,
             <TextField
               className="notes-input"
@@ -223,11 +225,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "className": "goodTake-input",
+              "checked": false,
+              "className": "goodTake-switch",
+              "color": "primary",
               "label": "Good Take?",
-              "required": false,
-              "select": false,
-              "variant": "outlined",
+              "onChange": [Function],
+              "value": "goodTake",
             },
             "ref": null,
             "rendered": null,
@@ -300,12 +303,13 @@ ShallowWrapper {
               select={false}
               variant="outlined"
             />
-            <TextField
-              className="goodTake-input"
+            <WithStyles(Switch)
+              checked={false}
+              className="goodTake-switch"
+              color="primary"
               label="Good Take?"
-              required={false}
-              select={false}
-              variant="outlined"
+              onChange={[Function]}
+              value="goodTake"
             />
             <TextField
               className="notes-input"
@@ -378,12 +382,13 @@ ShallowWrapper {
                 select={false}
                 variant="outlined"
               />,
-              <TextField
-                className="goodTake-input"
+              <WithStyles(Switch)
+                checked={false}
+                className="goodTake-switch"
+                color="primary"
                 label="Good Take?"
-                required={false}
-                select={false}
-                variant="outlined"
+                onChange={[Function]}
+                value="goodTake"
               />,
               <TextField
                 className="notes-input"
@@ -468,11 +473,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "className": "goodTake-input",
+                "checked": false,
+                "className": "goodTake-switch",
+                "color": "primary",
                 "label": "Good Take?",
-                "required": false,
-                "select": false,
-                "variant": "outlined",
+                "onChange": [Function],
+                "value": "goodTake",
               },
               "ref": null,
               "rendered": null,
