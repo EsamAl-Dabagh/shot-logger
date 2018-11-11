@@ -21,10 +21,13 @@ class Shoot extends Component {
     this.setState({ takes })
   }
 
+  removeTake = id => {
+    const takes = this.state.takes.filter(take => take.props.id !== id);
+    this.setState({ takes });
+  }
+
   displayTakes = () => {
-    
     return this.state.takes
-  
   }
 
   render() {

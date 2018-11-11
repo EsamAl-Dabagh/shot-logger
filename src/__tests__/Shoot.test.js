@@ -26,7 +26,6 @@ describe("Shoot", () => {
       shoot.find(".new-take-btn").simulate("click");
 
       expect(shoot.state().takes.length).toEqual(1)
-
     });
 
     it("assigns a unique id to each take", () => {
@@ -44,7 +43,19 @@ describe("Shoot", () => {
       const displayedTakes = shoot.find(".takes");
 
       expect(displayedTakes.children().length).toEqual(1);
+    });
 
+  });
+
+  describe("delete a take button", () => {
+      
+    beforeEach(() => {
+      shoot.find(".new-take-btn").simulate("click");
+      shoot.instance().removeTake(1);
+    });
+
+    it("removes the Take from `state`", () => {
+      expect(shoot.state().takes).toEqual([]);
     });
 
   });
