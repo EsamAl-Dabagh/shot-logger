@@ -4,7 +4,11 @@ import Take from '../components/Take';
 
 describe("Take", () => {
 
-  const take = shallow(<Take />);
+  const mockRemove = jest.fn();
+  const id = 1;
+  const key = 1;
+  const props = { key: key, id: id, removeTake: mockRemove }
+  const take = shallow(<Take {...props} />);
 
   it("renders correctly", () => {
     expect(take).toMatchSnapshot();
@@ -60,6 +64,16 @@ describe("Take", () => {
     it("updates the notes in `state`", () => {
       take.find(".notes-input").simulate("change", { target: { value: "Some notes" } });
       expect(take.state().notes).toEqual("Some notes");
+    });
+  });
+
+  describe("when clicking the remove button", () => {
+    beforeEach(() => {
+      take.find(".remove-btn").simulate("click");
+    });
+
+    it("calls the removeTake callback", () => {
+      expect(mockRemove).toHaveBeenCalledWith(id);
     });
   });
 });

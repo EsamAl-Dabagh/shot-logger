@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
 import Switch from '@material-ui/core/Switch';
+import Button from '@material-ui/core/Button';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 class Take extends Component {
   constructor() {
@@ -64,6 +66,15 @@ class Take extends Component {
             onChange={event => this.setState({ notes: event.target.value })}
           />
         </form>
+
+        <Button 
+            variant="contained" 
+            color="secondary" 
+            className="remove-btn"
+            onClick={() => this.props.removeTake(this.props.id)}
+          >
+            <DeleteIcon className="delete-icon" />
+          </Button>
       </div>
       
     )
