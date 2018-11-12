@@ -18,7 +18,7 @@ I want to be able to mark good takes
 ```
 As a videographer
 So I know what shot a particular take is refering to
-I want to be able to give a shot a description
+I want to be able to give a shot a descriptiont
 ```
 
 ```
@@ -29,7 +29,7 @@ I want to be able to make notes on each take
 
 ```
 As a videographer
-So I can get rid of errorness takes,
+So I can get rid of erroneous takes,
 I want to be able to delete a take
 ```
 
