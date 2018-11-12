@@ -59,5 +59,16 @@ describe("Shoot", () => {
     });
 
   });
+
+  describe("confirm take button", () => {
+    beforeEach(() => {
+      shoot.find(".new-take-btn").simulate("click");
+      shoot.instance().confirmTake();
+    });
+
+    it("adds a new take to the page", () => {
+      expect(shoot.state().takes.length).toEqual(2);
+    });
+  });
   
 });

@@ -16,9 +16,13 @@ class Shoot extends Component {
     const ids = this.state.takes.map(take => take.props.id);
     const max_id = ids.length === 0 ? 0 : Math.max(...ids);
     
-    takes.push(<Take key={max_id + 1} id={max_id + 1} removeTake={this.removeTake} />);
+    takes.push(<Take key={max_id + 1} id={max_id + 1} removeTake={this.removeTake} confirmTake={this.confirmTake} />);
 
     this.setState({ takes })
+  }
+
+  confirmTake = () => {
+    this.addTake();
   }
 
   removeTake = id => {

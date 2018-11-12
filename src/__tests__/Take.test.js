@@ -5,9 +5,10 @@ import Take from '../components/Take';
 describe("Take", () => {
 
   const mockRemove = jest.fn();
+  const mockConfirm = jest.fn();
   const id = 1;
   const key = 1;
-  const props = { key: key, id: id, removeTake: mockRemove }
+  const props = { key: key, id: id, removeTake: mockRemove, confirmTake: mockConfirm }
   const take = shallow(<Take {...props} />);
 
   it("renders correctly", () => {
@@ -74,6 +75,16 @@ describe("Take", () => {
 
     it("calls the removeTake callback", () => {
       expect(mockRemove).toHaveBeenCalledWith(id);
+    });
+  });
+
+  describe("when clicking the confirm button", () => {
+    beforeEach(() => {
+      take.find(".confirm-btn").simulate("click");
+    });
+
+    it("calls the confirmTake callback", () => {
+      expect(mockConfirm).toHaveBeenCalled();
     });
   });
 });

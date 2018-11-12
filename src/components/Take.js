@@ -3,6 +3,7 @@ import TextField from '@material-ui/core/TextField';
 import Switch from '@material-ui/core/Switch';
 import Button from '@material-ui/core/Button';
 import DeleteIcon from '@material-ui/icons/Delete';
+import DoneIcon from '@material-ui/icons/Done';
 
 class Take extends Component {
   constructor() {
@@ -68,13 +69,22 @@ class Take extends Component {
         </form>
 
         <Button 
-            variant="contained" 
-            color="secondary" 
-            className="remove-btn"
-            onClick={() => this.props.removeTake(this.props.id)}
-          >
-            <DeleteIcon className="delete-icon" />
-          </Button>
+          variant="contained" 
+          color="secondary" 
+          className="remove-btn"
+          onClick={() => this.props.removeTake(this.props.id)}
+        >
+          <DeleteIcon className="delete-icon" />
+        </Button>
+
+        <Button 
+          variant="contained" 
+          color="primary" 
+          className="confirm-btn"
+          onClick={() => this.props.confirmTake()}
+        >
+          <DoneIcon className="confirm-icon" />
+        </Button>
       </div>
       
     )
