@@ -1,5 +1,7 @@
 # Shot Logger
 
+[![Build Status](https://travis-ci.org/EsamAl-Dabagh/shot-logger.svg?branch=master)](https://travis-ci.org/EsamAl-Dabagh/shot-logger)
+
 ##### A web app to allow videographers and video production teams to keep track of their shots. 
 
 ### User Stories
