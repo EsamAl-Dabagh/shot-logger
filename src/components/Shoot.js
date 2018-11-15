@@ -7,7 +7,8 @@ class Shoot extends Component {
     super();
 
     this.state = {
-      takes: []
+      takes: [],
+      title: ""
     }
   }
 
