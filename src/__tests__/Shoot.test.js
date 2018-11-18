@@ -14,11 +14,15 @@ describe("Shoot", () => {
 
   it("renders correctly", () => {
     expect(shoot).toMatchSnapshot();
-  })
+  });
 
   it("initializes the `state` with an empty list of takes", () => {
     expect(shoot.state().takes).toEqual([]);
-  })
+  });
+
+  it("initializes the `state` with an empty title string", () => {
+    expect(shoot.state().title).toEqual("");
+  });
 
   describe("add new take button", () => {
 
