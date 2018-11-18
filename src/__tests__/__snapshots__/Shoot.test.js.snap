@@ -18,9 +18,16 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <h3>
-           This is the Shoot component 
-        </h3>,
+        <form>
+          <TextField
+            className="title-input"
+            onKeyDown={[Function]}
+            placeholder="Enter Shoot Title"
+            required={false}
+            select={false}
+            variant="standard"
+          />
+        </form>,
         <WithStyles(Button)
           className="new-take-btn"
           color="primary"
@@ -41,11 +48,33 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": " This is the Shoot component ",
+          "children": <TextField
+            className="title-input"
+            onKeyDown={[Function]}
+            placeholder="Enter Shoot Title"
+            required={false}
+            select={false}
+            variant="standard"
+          />,
         },
         "ref": null,
-        "rendered": " This is the Shoot component ",
-        "type": "h3",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "title-input",
+            "onKeyDown": [Function],
+            "placeholder": "Enter Shoot Title",
+            "required": false,
+            "select": false,
+            "variant": "standard",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "form",
       },
       Object {
         "instance": null,
@@ -84,9 +113,16 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <h3>
-             This is the Shoot component 
-          </h3>,
+          <form>
+            <TextField
+              className="title-input"
+              onKeyDown={[Function]}
+              placeholder="Enter Shoot Title"
+              required={false}
+              select={false}
+              variant="standard"
+            />
+          </form>,
           <WithStyles(Button)
             className="new-take-btn"
             color="primary"
@@ -107,11 +143,33 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": " This is the Shoot component ",
+            "children": <TextField
+              className="title-input"
+              onKeyDown={[Function]}
+              placeholder="Enter Shoot Title"
+              required={false}
+              select={false}
+              variant="standard"
+            />,
           },
           "ref": null,
-          "rendered": " This is the Shoot component ",
-          "type": "h3",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "className": "title-input",
+              "onKeyDown": [Function],
+              "placeholder": "Enter Shoot Title",
+              "required": false,
+              "select": false,
+              "variant": "standard",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "form",
         },
         Object {
           "instance": null,

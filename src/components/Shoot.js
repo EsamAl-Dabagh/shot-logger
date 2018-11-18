@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Take from './Take';
 import Button from '@material-ui/core/Button'
+import TextField from '@material-ui/core/TextField';
 
 class Shoot extends Component {
   constructor() {
@@ -35,10 +36,32 @@ class Shoot extends Component {
     return this.state.takes
   }
 
+  keyPress = (e) => {
+    if(e.keyCode === 13){
+      this.setState({ title: e.target.value })
+    }
+  }
+
+  displayTitle = () => {
+
+    const titleInput = <form>
+                          <TextField 
+                            className="title-input" 
+                            placeholder="Enter Shoot Title"
+                            onKeyDown={this.keyPress}
+                          />
+                        </form>
+
+    if (this.state.title === "") return titleInput;
+    
+    return <h1>{this.state.title}</h1>
+    
+  }
+
   render() {
     return (
       <React.Fragment>
-        <h3> This is the Shoot component </h3>
+        {this.displayTitle()}
         <Button variant="contained" color="primary" className="new-take-btn" onClick={this.addTake}>
           Add New Take
         </Button>
