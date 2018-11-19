@@ -10,8 +10,42 @@ class ShootTitle extends Component {
     }
   }
 
-  render() {
+  keyPress = (e) => {
+    if(e.keyCode === 13){
+      this.setState({ text: e.target.value })
+    }
+  }
 
+  inputPlaceholder = () => {
+    if (this.state.text === "") {
+      return "Enter Shoot Title"
+    }
+
+    return this.state.text;
+  }
+
+  displayTitle = () => {
+
+    const titleInput = <form>
+                          <TextField 
+                            className="title-input" 
+                            placeholder={this.inputPlaceholder()}
+                            onKeyDown={this.keyPress}
+                          />
+                        </form>
+
+    if (this.state.text === "") return titleInput;
+    
+    return <h1 className="shoot-title">{this.state.text}</h1>
+    
+  }
+
+  render() {
+    return(
+      <React.Fragment>
+        {this.displayTitle()}
+      </React.Fragment>
+    )
   }
 }
 
