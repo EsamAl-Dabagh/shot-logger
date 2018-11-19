@@ -54,7 +54,7 @@ class Shoot extends Component {
 
     if (this.state.title === "") return titleInput;
     
-    return <h1>{this.state.title}</h1>
+    return <h1 className="shoot-title">{this.state.title}</h1>
     
   }
 
