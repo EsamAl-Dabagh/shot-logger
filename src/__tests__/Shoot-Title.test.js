@@ -20,9 +20,11 @@ describe("Shoot Title", () => {
   });
 
   describe("when `text` is not empty", () => {
-    it("displays the title", () => {
+    beforeEach(() => {
       shootTitle.setState({ text: "Day 01" })
+    });
 
+    it("displays the title", () => {
       expect(shootTitle.find(".shoot-title").exists()).toBe(true);
     });
   });
