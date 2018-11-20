@@ -74,9 +74,20 @@ describe("Shoot", () => {
   });
 
   describe("export as PDF button", () => {
-    it("exists", () => {
-      expect(shoot.find(".export-pdf-btn").exists()).toBe(true)
+    describe("when there are one or more takes", () => {
+      beforeEach(() => {
+        shoot.find(".new-take-btn").simulate("click");
+      });
+
+      it("exists", () => {
+        expect(shoot.find(".export-pdf-btn").exists()).toBe(true);
+      });
+    });
+
+    describe("when there aren't any takes", () => {
+      it("does not exist", () => {
+        expect(shoot.find(".export-pdf-btn").exists()).toBe(false);
+      });
     });
   });
-  
 });

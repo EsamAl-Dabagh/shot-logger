@@ -36,6 +36,15 @@ class Shoot extends Component {
     return this.state.takes
   }
 
+  displayExportButton = () => {
+
+    const button = <Button variant="outlined" color="primary" className="export-pdf-btn">
+                    Export as PDF
+                  </Button>
+
+    if (this.state.takes.length > 0) return button; 
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -48,9 +57,8 @@ class Shoot extends Component {
           {this.displayTakes()}
         </div>
         
-        <Button variant="outlined" color="primary" className="export-pdf-btn">
-          Export as PDF
-        </Button>
+        {this.displayExportButton()}
+        
       </React.Fragment>
     )
   }
