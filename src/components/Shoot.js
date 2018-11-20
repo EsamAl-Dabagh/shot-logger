@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Take from './Take';
 import ShootTitle from './Shoot-Title';
 import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
 
 class Shoot extends Component {
   constructor() {
