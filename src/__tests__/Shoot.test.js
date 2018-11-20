@@ -51,8 +51,7 @@ describe("Shoot", () => {
 
   });
 
-  describe("delete a take button", () => {
-      
+  describe("delete a take button", () => {   
     beforeEach(() => {
       shoot.find(".new-take-btn").simulate("click");
       shoot.instance().removeTake(1);
@@ -61,7 +60,6 @@ describe("Shoot", () => {
     it("removes the Take from `state`", () => {
       expect(shoot.state().takes).toEqual([]);
     });
-
   });
 
   describe("confirm take button", () => {
@@ -72,6 +70,12 @@ describe("Shoot", () => {
 
     it("adds a new take to the page", () => {
       expect(shoot.state().takes.length).toEqual(2);
+    });
+  });
+
+  describe("export as PDF button", () => {
+    it("exists", () => {
+      expect(shoot.find(".export-pdf-btn").exists()).toBe(true)
     });
   });
   

@@ -30,6 +30,13 @@ ShallowWrapper {
         <div
           className="takes"
         />,
+        <WithStyles(Button)
+          className="export-pdf-btn"
+          color="primary"
+          variant="outlined"
+        >
+          Export as PDF
+        </WithStyles(Button)>,
       ],
     },
     "ref": null,
@@ -70,6 +77,20 @@ ShallowWrapper {
         "rendered": Array [],
         "type": "div",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Export as PDF",
+          "className": "export-pdf-btn",
+          "color": "primary",
+          "variant": "outlined",
+        },
+        "ref": null,
+        "rendered": "Export as PDF",
+        "type": [Function],
+      },
     ],
     "type": Symbol(react.fragment),
   },
@@ -92,6 +113,13 @@ ShallowWrapper {
           <div
             className="takes"
           />,
+          <WithStyles(Button)
+            className="export-pdf-btn"
+            color="primary"
+            variant="outlined"
+          >
+            Export as PDF
+          </WithStyles(Button)>,
         ],
       },
       "ref": null,
@@ -131,6 +159,20 @@ ShallowWrapper {
           "ref": null,
           "rendered": Array [],
           "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Export as PDF",
+            "className": "export-pdf-btn",
+            "color": "primary",
+            "variant": "outlined",
+          },
+          "ref": null,
+          "rendered": "Export as PDF",
+          "type": [Function],
         },
       ],
       "type": Symbol(react.fragment),

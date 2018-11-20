@@ -48,6 +48,9 @@ class Shoot extends Component {
           {this.displayTakes()}
         </div>
         
+        <Button variant="outlined" color="primary" className="export-pdf-btn">
+          Export as PDF
+        </Button>
       </React.Fragment>
     )
   }
