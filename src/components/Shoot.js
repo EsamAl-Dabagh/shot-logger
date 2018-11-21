@@ -36,9 +36,13 @@ class Shoot extends Component {
     return this.state.takes
   }
 
+  exportShotList = () => {
+    this.props.exportPDF();
+  }
+
   displayExportButton = () => {
 
-    const button = <Button variant="outlined" color="primary" className="export-pdf-btn">
+    const button = <Button variant="outlined" color="primary" className="export-pdf-btn" onClick={this.exportShotList}>
                     Export as PDF
                   </Button>
 

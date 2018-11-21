@@ -4,7 +4,9 @@ import Shoot from '../components/Shoot';
 
 describe("Shoot", () => {
 
-  const shoot = shallow(<Shoot />);
+  const exportPDFMock = jest.fn();
+  const props = { exportPDF: exportPDFMock }
+  const shoot = shallow(<Shoot {...props} />);
 
   afterEach( () => {
     shoot.setState({
@@ -81,6 +83,17 @@ describe("Shoot", () => {
 
       it("exists", () => {
         expect(shoot.find(".export-pdf-btn").exists()).toBe(true);
+      });
+
+      describe("when clicked", () => {
+        beforeEach(() => {
+          shoot.find(".new-take-btn").simulate("click");
+        });
+
+        it("calls export method", () => {
+          shoot.find(".export-pdf-btn").simulate("click");
+          expect(exportPDFMock).toHaveBeenCalledTimes(1);
+        });
       });
     });
 
