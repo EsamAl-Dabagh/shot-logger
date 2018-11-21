@@ -1,9 +1,14 @@
 import ExportPDF from "../components/ExportPDF";
 
 describe("ExportPDF", () => {
-  const exportPDF = new ExportPDF();
 
-  it("has a saveFile method", () => {
-    expect(exportPDF.saveFile()).toEqual("saveFile called")
+  const mockExporter = jest.fn();
+  const exportPDF = new ExportPDF(mockExporter);
+
+  describe("saveFile", () => {
+    it("calls createPDF function", () => {
+      exportPDF.saveFile();
+      expect(mockExporter).toHaveBeenCalled();
+    });
   });
 });
