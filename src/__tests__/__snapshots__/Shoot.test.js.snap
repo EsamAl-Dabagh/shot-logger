@@ -18,7 +18,9 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <ShootTitle />,
+        <ShootTitle
+          passToShoot={[Function]}
+        />,
         <WithStyles(Button)
           className="new-take-btn"
           color="primary"
@@ -38,7 +40,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "passToShoot": [Function],
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -80,7 +84,9 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <ShootTitle />,
+          <ShootTitle
+            passToShoot={[Function]}
+          />,
           <WithStyles(Button)
             className="new-take-btn"
             color="primary"
@@ -100,7 +106,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "passToShoot": [Function],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
