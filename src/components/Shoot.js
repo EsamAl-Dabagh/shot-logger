@@ -36,10 +36,17 @@ class Shoot extends Component {
     return this.state.takes
   }
 
+  addTitle = (title) => {
+    console.log(title)
+    this.setState({
+      title: title
+    })
+  }
+
   render() {
     return (
       <React.Fragment>
-        <ShootTitle />
+        <ShootTitle passToShoot={this.addTitle} />
         <Button variant="contained" color="primary" className="new-take-btn" onClick={this.addTake}>
           Add New Take
         </Button>
