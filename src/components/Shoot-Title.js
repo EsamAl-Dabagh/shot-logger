@@ -13,6 +13,7 @@ class ShootTitle extends Component {
   keyPress = (e) => {
     if(e.keyCode === 13){
       this.setState({ text: e.target.value })
+      this.props.passToShoot(e.target.value);
     }
   }
 
