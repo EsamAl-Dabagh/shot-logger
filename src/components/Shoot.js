@@ -9,10 +9,11 @@ class Shoot extends Component {
 
     this.state = {
       takes: [],
+      takeDetails: [],
       title: ""
     }
   }
-
+  
   addTake = () => {
     const takes = [...this.state.takes];
     const ids = this.state.takes.map(take => take.props.id);
@@ -23,7 +24,23 @@ class Shoot extends Component {
     this.setState({ takes })
   }
 
-  confirmTake = () => {
+  confirmTake = (takeID, take) => {
+
+    const takeDetails = [...this.state.takeDetails]
+
+    const currentTake = {
+      "takeId": takeID,
+      "scene": take.scene,
+      "shot": take.shot,
+      "takeNumber": take.takeNumber,
+      "description": take.description,
+      "goodTake": take.goodTake,
+      "notes": take.notes
+    }
+
+    takeDetails.push(currentTake)
+
+    this.setState({ takeDetails })
     this.addTake();
   }
 
