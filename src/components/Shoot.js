@@ -46,7 +46,8 @@ class Shoot extends Component {
 
   removeTake = id => {
     const takes = this.state.takes.filter(take => take.props.id !== id);
-    this.setState({ takes });
+    const takeDetails = this.state.takeDetails.filter(take => take.takeId !== id);
+    this.setState({ takes, takeDetails });
   }
 
   displayTakes = () => {
