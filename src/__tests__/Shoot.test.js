@@ -67,7 +67,29 @@ describe("Shoot", () => {
   describe("confirm take button", () => {
     beforeEach(() => {
       shoot.find(".new-take-btn").simulate("click");
-      shoot.instance().confirmTake();
+      const testID = 1
+      const testTake = {
+        "scene": 1,
+        "shot": 2,
+        "takeNumber": 3,
+        "description": "Aerial",
+        "goodTake": true,
+        "notes": "Test Notes"
+      }
+      shoot.instance().confirmTake(testID, testTake);
+    });
+
+    it("updates takeDetails with details from confirmed take", () => {
+      const testDetails = {
+        "takeId": 1,
+        "scene": 1,
+        "shot": 2,
+        "takeNumber": 3,
+        "description": "Aerial",
+        "goodTake": true,
+        "notes": "Test Notes"
+      }
+      expect(shoot.state().takeDetails[0]).toEqual(testDetails);
     });
 
     it("adds a new take to the page", () => {
