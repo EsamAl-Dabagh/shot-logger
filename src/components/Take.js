@@ -81,7 +81,7 @@ class Take extends Component {
           variant="contained" 
           color="primary" 
           className="confirm-btn"
-          onClick={() => this.props.confirmTake()}
+          onClick={() => this.props.confirmTake(this.props.id, this.state)}
         >
           <DoneIcon className="confirm-icon" />
         </Button>
