@@ -55,11 +55,27 @@ describe("Shoot", () => {
       
     beforeEach(() => {
       shoot.find(".new-take-btn").simulate("click");
-      shoot.instance().removeTake(1);
     });
 
     it("removes the Take from `state`", () => {
+      shoot.instance().removeTake(1);
       expect(shoot.state().takes).toEqual([]);
+    });
+
+    it("removes the take's details from takeDetails", () => {
+      const testID = 1
+      const testTake = {
+        "scene": 1,
+        "shot": 2,
+        "takeNumber": 3,
+        "description": "Aerial",
+        "goodTake": true,
+        "notes": "Test Notes"
+      }
+      shoot.instance().confirmTake(testID, testTake);
+
+      shoot.instance().removeTake(1);
+      expect(shoot.state().takeDetails[0]).toEqual(expect.not.objectContaining(testTake));
     });
 
   });
