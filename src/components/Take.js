@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
-import Switch from '@material-ui/core/Switch';
+import Checkbox from '@material-ui/core/Checkbox';
 import Button from '@material-ui/core/Button';
 import DeleteIcon from '@material-ui/icons/Delete';
 import DoneIcon from '@material-ui/icons/Done';
@@ -50,7 +50,7 @@ class Take extends Component {
             onChange={event => this.setState({ description: event.target.value })} 
           />
               
-          <Switch 
+          <Checkbox
             className="goodTake-switch"
             checked={this.state.goodTake}
             onChange={event => this.setState({ goodTake: event.target.checked })} 
