@@ -60,7 +60,7 @@ ShallowWrapper {
             select={false}
             variant="outlined"
           />
-          <WithStyles(Switch)
+          <WithStyles(Checkbox)
             checked={false}
             className="goodTake-switch"
             color="primary"
@@ -159,7 +159,7 @@ ShallowWrapper {
               select={false}
               variant="outlined"
             />,
-            <WithStyles(Switch)
+            <WithStyles(Checkbox)
               checked={false}
               className="goodTake-switch"
               color="primary"
@@ -383,7 +383,7 @@ ShallowWrapper {
               select={false}
               variant="outlined"
             />
-            <WithStyles(Switch)
+            <WithStyles(Checkbox)
               checked={false}
               className="goodTake-switch"
               color="primary"
@@ -482,7 +482,7 @@ ShallowWrapper {
                 select={false}
                 variant="outlined"
               />,
-              <WithStyles(Switch)
+              <WithStyles(Checkbox)
                 checked={false}
                 className="goodTake-switch"
                 color="primary"
